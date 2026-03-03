@@ -2,8 +2,9 @@
 <input id="n1" type="number" placeholder="Digite um número">
 <input id="n2" typer="number" placeholder="Digite outro número">
 <button onclick="somar()"> Somar </button>
-<button onclick="subritrai()"> Subritrai </button>
-<button onclick="mudibricar()"> Mudibricar</button>
+<button onclick="subtrai()"> Subtrai </button>
+<button onclick="multiplicar()"> multiplicar</button>
+<button onclick="dividir()"> Dividir</button>
 <p id="resultado">  </p>
 <p id="mensagem"> Clique aqui para mudar </p>
 <button onclick="trocar()" ondblclick="voltar()"> Trocar de cor </button>
@@ -28,17 +29,24 @@
         let soma = n1 + n2;
         document.getElementById("resultado").innerText = "Resultado = " + soma;
     }
-function subritrai(){
+function subtrai(){
         let n1 = Number(document.getElementById("n1").value);
         let n2 = Number(document.getElementById("n2").value);
-        let subritrair = n1 - n2;
-        document.getElementById("resultado").innerText = "Resultado = " + subritrair;
+        let subtrair = n1 - n2;
+        document.getElementById("resultado").innerText = "Resultado = " + subtrair;
     }
-function mudibricar(){
+function multiplicar(){
         let n1 = Number(document.getElementById("n1").value);
         let n2 = Number(document.getElementById("n2").value);
-        let mudibricar = n1 * n2;
-        document.getElementById("resultado").innerText = "Resultado = " + mudibricar;
+        let multiplicar = n1 * n2;
+        document.getElementById("resultado").innerText = "Resultado = " + multiplicar;
+    }
+    function dividir(){
+        let n1 = Number(document.getElementById("n1").value);
+        let n2 = Number(document.getElementById("n2").value);
+        let dividir = n1 / n2;
+        document.getElementById("resultado").innerText = "Resultado = " + dividir;
     }
 </script>  
+
     
